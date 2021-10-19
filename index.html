@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <title>Dishes Websites</title>
@@ -64,7 +64,7 @@
                                 </a>
 
                             </li>
-                            <li><a class="nav__item" href="#">Style Quiz</a></li>
+                            <li><a class="nav__item" href="#">Explore our store</a></li>
                             <li>
                                 <a class="nav__item" href="about.html">About Us</a></li>
                             <li class="nav__nav">
@@ -90,12 +90,12 @@
                         <span class="burger__item">Menu</span>
 
                     </button>
-                    <div class="header__logo" id="logo" data-scroll="#intro">
+                    <div class="header__logo" id="logo">
                         <a href=""><img class="img" src="assets/img/Rectangle.svg" alt=""></a>
                     </div>
                     <div class="header__menu">
                         <div class="header__menu-img">
-                            <a href="" data-modal="#modal"><img class="img" src="assets/img/Group (1).svg" alt=""></a>
+                            <a href="" id="modalWin" data-modal="#modal"><img class="img" src="assets/img/Group (1).svg" alt=""></a>
                         </div>
                         <ul class="header__menu-img">
                             <li class="search__img"><img class="img" src="assets/img/Group (2).svg" alt="">
@@ -124,16 +124,16 @@
         <!-- ./header -->
 
         <!-- Intro -->
-        <div class="intro" id="intro" data-scrollspy="#intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
-                    <div class="intro_text" data-aos="fade-down">
+                    <div class="intro_text">
                         ALL COLLECTIONS
                     </div>
-                    <div class="intro__title" data-aos="fade-down">
-                        Elevate Your <span class="type"></span>
+                    <div class="intro__title">
+                        Elevate Your <span class="type">Everyday</span>
                     </div>
-                    <a href="#" class="btn btn-success" data-aos="fade-up">SHOP NOW</a>
+                    <a href="#" class="btn btn-success">SHOP NOW</a>
                 </div>
                 <a href="" class="move-up">
                     <img class="img" src="assets/img/up-arrow.png" alt="" width="50">
@@ -164,12 +164,12 @@
 
         <!-- Section -->
 
-        <section class="section" id="shop" data-scrollspy="#shop">
+        <section class="section" id="shop">
             <div class="container">
                 <h4 class="section__title">Maple Board Collection</h4>
                 <div class="section__inner">
                     <div class="section__block">
-                        <div class="section__img" data-aos="fade-up">
+                        <div class="section__img">
                             <img class="img" src="assets/img/bg2.png" alt="">
                         </div>
                         <div class="section__block-title">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="section__block">
-                        <div class="section__img" data-aos="fade-up" data-aos-delay="400">
+                        <div class="section__img">
                             <img class="img" src="assets/img/bg3.png" alt="">
                         </div>
                         <div class="section__block-title">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                     <div class="section__block">
-                        <div class="section__img" data-aos="fade-up" data-aos-delay="600">
+                        <div class="section__img">
                             <img class="img" src="assets/img/bg4.png" alt="">
                         </div>
                         <div class="section__block-title">
@@ -210,13 +210,13 @@
 
         <!-- THE ESSENTIALS -->
 
-        <div class="essentials" id="about" data-scrollspy="#about">
+        <div class="essentials" id="about">
             <div class="container">
                 <div class="essentials__inner">
                     <div class="essentials__text">
                         THE ESSENTIALS
                     </div>
-                    <div class="essentials__subtitle" data-aos="zoom-in">
+                    <div class="essentials__subtitle">
                         <p>We believe minimalism means more. More space, more time, more meaningful moments.</p>
                     </div>
                 </div>
@@ -225,10 +225,10 @@
 
         <!-- Story-1 -->
 
-        <div class="story" id="style" data-scrollspy="#style">
+        <div class="story" id="style">
             <div class="container">
                 <div class="story__inner">
-                    <div class="story__img story__img--storyimg" data-aos="flip-left">
+                    <div class="story__img story__img--storyimg">
                         <img class="img" src="assets/img/bg6.png" alt="">
                     </div>
                     <div class="story__content story__content--story1">
@@ -258,7 +258,7 @@
                                 a seat, and stay a while</p>
                         </div>
                     </div>
-                    <div class="story__img" data-aos="flip-right">
+                    <div class="story__img">
                         <img class="img" src="assets/img/bg7.png" alt="">
                     </div>
                 </div>
@@ -292,7 +292,7 @@
             <div class="container">
                 <h2 class="moments__title">#KinnMoments</h2>
                 <div class="moments__inner" id="momentsSlider">
-                    <div class="moments__img" data-aos="fade-up">
+                    <div class="moments__img">
                         <img class="img" src="assets/img/Rectangle (8).png" alt="">
                     </div>
                     <div class="moments__img">
@@ -392,10 +392,13 @@
 
         <div class="modal" id="modal">
             <div class="modal__inner">
+
                 <div class="modal__content">
+
+
                     <div class="modal__header">
-                        <h2 class="modal__title">Need to deliver your cargo? <br>We can help!</h2>
-                        <div class="model__subtitle">Fill a little form and we will call you back!</div>
+                        <h2 class="modal__title">Sign out</h2>
+                        <div class="model__subtitle">Write your contact</div>
                     </div>
                     <form action="/" class="form-1">
                         <div class="form-group">
@@ -416,27 +419,33 @@
                     <div class="modal__footer">
                         <h4 class="modal__footer-title">Our contacts</h4>
                         <div class="address">
-                            <div class="address__city">New York, Street, ZIP code</div>
-                            <div class="address__phone">Phone: +9948373123</div>
-                            <div class="address__email">E-mail: hello@centerlogistic.com</div>
+                            <div class="address__city">Almaty, SDU, 1/1</div>
+                            <div class="address__phone">Phone: +87763587151</div>
+                            <div class="address__email">E-mail: ntrealiyev@mail.ru</div>
                         </div>
                     </div>
+
+
 
                     <div class="modal__close" data-close>
                         <img src="assets/img/Group 1.svg" alt="Close">
                     </div>
-
-
                 </div>
+
             </div>
         </div>
 
     </div>
 
+
+
+
+
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/typed.js"></script>
+
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/aos.js"></script>
+
     <script src="assets/js/app.js"></script>
 
 
