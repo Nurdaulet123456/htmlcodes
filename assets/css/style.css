@@ -948,7 +948,7 @@ a {
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid black;
     color: black;
     font-size: 15px;
     padding-left: 45px;
@@ -992,8 +992,8 @@ a {
 }
 
 .hr {
-    border: 1px solid #E8E8E8;
-    background-color: #E8E8E8;
+    border: 1px solid black;
+    background-color: black;
     margin-bottom: 25px;
 }
 
