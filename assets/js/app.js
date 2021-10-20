@@ -49,7 +49,7 @@ $(function() {
 
         setTimeout(function() {
             $(modal).find('.modal__content').css({
-                transform: 'rotate(0)',
+                transform: 'scale(1)',
                 opacity: '1'
             });
         });
@@ -63,7 +63,7 @@ $(function() {
 
 
         modal.find('.modal__content').css({
-            transform: 'rotate(180deg)',
+            transform: 'scale(1)',
             opacity: '0'
         });
 
