@@ -912,7 +912,7 @@ a {
     max-width: 400px;
     padding: 25px;
     position: relative;
-    transform: rotate(180deg);
+    transform: scale(1);
     opacity: 0;
     transition: transform 0.4s linear, opacity 0.4s linear;
 }
@@ -984,27 +984,9 @@ a {
     background-image: linear-gradient(to right, #668d28, #315000);
 }
 
-.hr {
-    border: 1px solid #E8E8E8;
-    background-color: #E8E8E8;
-    margin-bottom: 25px;
-}
 
-.modal__footer {
-    text-align: center;
-}
 
-.modal__footer-title {
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-.address {
-    color: black;
-    font-size: 15px;
-}
 
 .modal__close {
     width: 20px;
